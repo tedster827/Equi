@@ -42,6 +42,7 @@ int main()
   {
     if(iArray[i] >> gNumber)
     {
+      cout << "[Input #" << i << "]:" << gNumber << endl;
       A.push_back(gNumber);
     }
   }
