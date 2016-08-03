@@ -40,11 +40,15 @@ int main()
   cin >> iArray;
   for(int i = 0; i < iArray.size(); i++)
   {
+    iArray >> gNumber;
+    A.push_back(gNumber);
+    /*
     if(iArray[i] >> gNumber)
     {
       cout << "[Input #" << i << "]:" << gNumber << endl;
       A.push_back(gNumber);
     }
+    */
   }
 
   //Debug: Display Input Vector.
