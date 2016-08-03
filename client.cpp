@@ -16,13 +16,13 @@ void displayVector(vector<int> &A)
 {
   if(A.size() > 0)
   {
-    cout << "Input Vector: "
+    cout << "Input Vector: ";
     for(int i = 0; i < A.size(); i++)
     {
       cout << A[i] << " " << endl;
     }
   }
-  cout << "[Error] Cannot Display An Empty Vector."
+  cout << "[Error] Cannot Display An Empty Vector." << endl;
   return;
 }
 
