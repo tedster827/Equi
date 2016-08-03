@@ -26,7 +26,7 @@ void display_vector(vector<int> &A)
   }
   else
   {
-    cout << "[Error] Cannot Display Vector." << endl;    
+    cout << "[Error] Cannot Display Vector." << endl;
   }
   return;
 }
@@ -40,8 +40,7 @@ int main()
   int gNumber;
   //placeholer for vector input.
   string iArray;
-  cout << "Please enter integers into the array and put spaces between integers.
-   [Press Enter When Done]" << endl;
+  cout << "Please enter integers into the array and put spaces between integers. [Press Enter When Done]" << endl;
   //asking user for array;
   getline(cin, iArray);
   istringstream stream(iArray);
