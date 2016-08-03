@@ -12,7 +12,7 @@ Input: A [Input Vector-Passing by reference to save
 memory]
 Output: None [Void Function]
 */
-void displayVector(vector<int> &A)
+void display_vector(vector<int> &A)
 {
   if(A.size() > 0)
   {
@@ -37,22 +37,16 @@ int main()
   string iArray;
   cout << "Please enter integers into the array and put spaces between integers. [Press Enter When Done]" << endl;
   //asking user for array;
-  cin >> iArray;
-  for(int i = 0; i < iArray.size(); i++)
+  getline(cin, iArray);
+  istringstream stream(iArray);
+  while(stream >> gNumber)
   {
-    iArray >> gNumber;
     A.push_back(gNumber);
-    /*
-    if(iArray[i] >> gNumber)
-    {
-      cout << "[Input #" << i << "]:" << gNumber << endl;
-      A.push_back(gNumber);
-    }
-    */
   }
 
+
   //Debug: Display Input Vector.
-  displayVector(A);
+  display_vector(A);
 
   return 0;
 }
