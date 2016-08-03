@@ -47,7 +47,7 @@ int main()
   }
 
   //Debug: Display Input Vector.
-
+  displayVector(&A);
 
   return 0;
 }
