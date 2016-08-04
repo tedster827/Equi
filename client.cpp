@@ -9,15 +9,16 @@ using namespace std;
 Debug: [Int Only] Display Input Vector.
 Purpose: To make sure the input vector is getting the
 correct inputs.
-Input: A [Input Vector-Passing by reference to save
+Input: A [Input Vector- Passing by reference to save
 memory]
-Output: None [Void Function]
+Output: None [Void Function- The function will simply
+display the vector nothing needs to be returned.]
 */
 void display_vector(vector<int> &A)
 {
   if(A.size() > 0)
   {
-    cout << "Input Vector: ";
+    cout << "Testing This Vector: ";
     for(int i = 0; i < A.size(); i++)
     {
       cout << A[i] << " ";
@@ -29,6 +30,21 @@ void display_vector(vector<int> &A)
     cout << "[Error] Cannot Display Vector." << endl;
   }
   return;
+}
+/*
+Purpose: This will test each possible index value
+to see if it is a equilibrium index.
+Input: A [Input Vector- Passed by reference to save
+memory]
+Output: None [Void Function- There isn't a need for
+an output because this function will just display
+the equilibrium indexes.]
+*/
+void find_equi_indexes(&A)
+{
+  /*This variable will be used to be the counter for
+  how many indexes must be tested.*/
+  int p = A.size();
 }
 
 
@@ -52,6 +68,7 @@ int main()
 
   //Debug: Display Input Vector.
   display_vector(A);
+  find_equi_indexes(A);
 
   return 0;
 }
