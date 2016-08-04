@@ -40,7 +40,7 @@ Output: None [Void Function- There isn't a need for
 an output because this function will just display
 the equilibrium indexes.]
 */
-void find_equi_indexes(&A)
+void find_equi_indexes(vector<int> &A)
 {
   /*This variable will be used to be the counter for
   how many indexes must be tested.*/
